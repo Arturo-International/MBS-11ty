@@ -75,7 +75,7 @@ layout: 'baseAlt.njk'
                                     description: document.getElementById('workDescription').value
                                 };
                                 try {
-                                    const response = await fetch('https://mercysbeautysalon.netlify.app/Appts', {
+                                    const response = await fetch('http://localhost:3000/Appts', {
                                         method: 'POST',
                                         headers: { 'Content-Type': 'application/json' },
                                         body: JSON.stringify(data)
